@@ -160,6 +160,14 @@ function handleClick(){
     // displayClickedSelectionsList();
     // displayChart();
     button.addEventListener('click',displayChart);
+
+    function saveMydata() {
+      var stringifyData = JSON.stringify(images);
+      localStorage.setItem('stringifyData', stringifyData);
+    }
+
+
+    saveMydata();
   }
 }
 
@@ -185,8 +193,13 @@ function removeClickEvents(){
   }
 }
 
+if (localStorage.getItem('stringifyData')) {
+  var stringifiedDataFromLocalStorage = localStorage.getItem('stringifyData');
+  images = JSON.parse(stringifiedDataFromLocalStorage);
+} else {
+  createImageInstances();
+}
 
-createImageInstances();
 displayImages();
 
 function displayChart(){
