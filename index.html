@@ -5,16 +5,27 @@
     <meta charset="utf-8">
     <title>Bus mall</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <h1>Welcome to my Bus Mall</h1>
+    </header>
+
     <section id="images"></section>
     <section>
-        <ul id="selected-images-list"></ul>
+        <div class="container">
+            <ul id="selected-images-list"></ul>
+            <canvas id="myChart" width="600" height="600" style="display:none;"></canvas>
+            <button id="button" type="button" name="button">Display the Chart</button>
+        </div>
     </section>
+
     <footer>
     </footer>
+
     <script src="app.js"></script>
 </body>
 

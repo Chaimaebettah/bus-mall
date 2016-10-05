@@ -1,5 +1,34 @@
-
 img {
-  width: 200px;
-  margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    border: 2px solid #e6e6e6;
+    /*margin: 0 auto;*/
+}
+
+canvas {
+    outline: 2px solid #e6e6e6;
+}
+
+section {
+    width: 660px;
+    margin: 0 auto;
+}
+
+#myChart {
+    margin: 0 auto;
+}
+
+#button {
+    padding: 20px 50px;
+    background-color: #e6e6e6;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid #e6e6e6;
+    cursor: pointer;
+}
+
+h1 {
+    color: gray;
+    text-align: center;
 }
