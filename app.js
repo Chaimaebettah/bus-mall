@@ -166,7 +166,6 @@ function handleClick(){
       localStorage.setItem('stringifyData', stringifyData);
     }
 
-
     saveMydata();
   }
 }
